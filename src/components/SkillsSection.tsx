@@ -7,7 +7,7 @@ const technicalSkills = [
   { name: "Java", level: 75 },
   { name: "MySQL", level: 90 },
   { name: "R Programming", level: 85 },
-  { name: "Tableau", level: 60 },
+  { name: "Tableau", level: 55 },
   { name: "Microsoft Excel", level: 75 },
 ];
 
