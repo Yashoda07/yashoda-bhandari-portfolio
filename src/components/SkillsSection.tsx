@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 
 const technicalSkills = [
-  { name: "HTML", level: 90 },
-  { name: "CSS", level: 85 },
+  { name: "HTML", level: 95 },
+  { name: "CSS", level: 90 },
   { name: "JavaScript", level: 75 },
   { name: "Java", level: 75 },
-  { name: "MySQL", level: 70 },
-  { name: "R Programming", level: 55 },
+  { name: "MySQL", level: 90 },
+  { name: "R Programming", level: 85 },
   { name: "Tableau", level: 60 },
   { name: "Microsoft Excel", level: 75 },
 ];
