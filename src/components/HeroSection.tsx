@@ -73,13 +73,13 @@ const HeroSection = () => {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="relative flex-shrink-0"
         >
-          <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden gradient-border glow">
+          <div className="w-56 h-72 md:w-64 md:h-80 rounded-3xl overflow-hidden gradient-border glow">
             <img
               src={profileImg}
               alt="Yashoda Bhandari"
               className="w-full h-full object-cover"
               width={512}
-              height={512}
+              height={680}
             />
           </div>
           {/* Decorative ring */}
