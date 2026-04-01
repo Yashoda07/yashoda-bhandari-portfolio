@@ -83,7 +83,7 @@ const HeroSection = () => {
             />
           </div>
           {/* Decorative ring */}
-          <div className="absolute -inset-4 rounded-full border border-primary/20 animate-pulse" />
+          <div className="absolute -inset-4 rounded-3xl border border-primary/20 animate-pulse" />
         </motion.div>
       </div>
     </section>
