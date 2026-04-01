@@ -22,11 +22,31 @@ const HeroSection = () => {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 py-32 flex flex-col md:flex-row items-center gap-12 md:gap-20">
+        {/* Profile image */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7 }}
+          className="relative flex-shrink-0"
+        >
+          <div className="w-56 h-72 md:w-64 md:h-80 rounded-3xl overflow-hidden gradient-border glow">
+            <img
+              src={profileImg}
+              alt="Yashoda Bhandari"
+              className="w-full h-full object-cover"
+              width={512}
+              height={680}
+            />
+          </div>
+          {/* Decorative ring */}
+          <div className="absolute -inset-4 rounded-3xl border border-primary/20 animate-pulse" />
+        </motion.div>
+
         {/* Text */}
         <motion.div
-          initial={{ opacity: 0, x: -40 }}
+          initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
           className="flex-1 text-center md:text-left"
         >
           <span className="inline-block px-4 py-1.5 rounded-full text-xs font-medium tracking-widest uppercase border border-primary/40 text-primary mb-6">
@@ -64,26 +84,6 @@ const HeroSection = () => {
               <Download size={16} /> Resume
             </a>
           </div>
-        </motion.div>
-
-        {/* Profile image */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
-          className="relative flex-shrink-0"
-        >
-          <div className="w-56 h-72 md:w-64 md:h-80 rounded-3xl overflow-hidden gradient-border glow">
-            <img
-              src={profileImg}
-              alt="Yashoda Bhandari"
-              className="w-full h-full object-cover"
-              width={512}
-              height={680}
-            />
-          </div>
-          {/* Decorative ring */}
-          <div className="absolute -inset-4 rounded-3xl border border-primary/20 animate-pulse" />
         </motion.div>
       </div>
     </section>
