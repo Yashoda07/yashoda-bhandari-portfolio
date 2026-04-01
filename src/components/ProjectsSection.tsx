@@ -7,6 +7,7 @@ const projects = [
     description:
       "A structured web project focusing on responsive design and usability. Emphasizes layout clarity, UI polish, and frontend logic for a seamless shopping experience.",
     tags: ["HTML", "CSS", "JavaScript"],
+    liveDemo: "https://github.com/Yashoda07/frontend-projects/tree/main/KaarigariKart",
   },
   {
     title: "YouTube UI Clone",
@@ -66,7 +67,9 @@ const ProjectsSection = () => {
 
               <div className="flex gap-4">
                 <a
-                  href="#"
+                  href={project.liveDemo || "#"}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 text-sm text-primary hover:underline"
                 >
                   <ExternalLink size={14} /> Live Demo
