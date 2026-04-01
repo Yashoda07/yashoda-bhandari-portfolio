@@ -36,8 +36,8 @@ const ProjectsSection = () => {
           Featured <span className="gradient-text">work</span>
         </h2>
         <p className="text-muted-foreground mb-12 max-w-xl">
-          Projects are continuously being refined — focusing on improving
-          design, performance, and interactivity.
+          Projects are continuously being refined, focusing on improving design,
+          performance and interactivity.
         </p>
 
         <div className="grid md:grid-cols-2 gap-8">
