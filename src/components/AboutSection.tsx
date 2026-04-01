@@ -4,17 +4,17 @@ import { GraduationCap, Palette, Code } from "lucide-react";
 const education = [
   {
     period: "2024 – 2027",
-    title: "B.Sc. IT (Major) + Management Studies (Minor)",
+    title: "B.Sc. IT (Major) + Management Studies (Minor) [ 9.95 SGPA]",
     place: "St. Xavier's College, Mumbai",
   },
   {
     period: "2022 – 2024",
-    title: "Higher Secondary",
+    title: "Higher Secondary Education [ 95.00% ]",
     place: "St. Xavier's College, Mumbai",
   },
   {
     period: "Till 2022",
-    title: "Schooling",
+    title: "Primary and Secondary Education [ 89.80% ]",
     place: "R.G.S English High School, Ulhasnagar",
   },
 ];
