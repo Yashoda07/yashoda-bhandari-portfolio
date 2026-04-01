@@ -53,13 +53,13 @@ const AboutSection = () => {
               <span className="gradient-text">passion & precision</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              I'm a frontend developer specializing in HTML, CSS, and JavaScript,
-              focused on creating clean, structured, and user-friendly interfaces.
+              I'm a frontend developer specializing in HTML, CSS and JavaScript,
+              focused on creating clean, structured and user-friendly interfaces.
               My design thinking is deeply influenced by my background in art and
               creativity, giving my work a unique aesthetic edge.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Currently expanding into React, Node.js, and data analysis tools,
+              Currently expanding into React, Node.js and data analysis tools,
               I'm passionate about bridging design and functionality to build
               meaningful digital experiences.
             </p>
