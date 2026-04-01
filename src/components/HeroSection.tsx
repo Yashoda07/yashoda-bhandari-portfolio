@@ -58,10 +58,9 @@ const HeroSection = () => {
             <span className="gradient-text">Yashoda Bhandari</span>
           </h1>
 
-          <p className="text-muted-foreground text-lg max-w-lg mb-8 leading-relaxed">
-            Passionate about building user-focused, responsive web applications
-            with clean code. B.Sc. IT student with a growing interest in
-            full-stack development and data analysis.
+          <p className="text-muted-foreground text-lg max-w-lg mb-8 leading-relaxed whitespace-pre-line">
+            B.Sc. IT student with a growing interest in full-stack development and data analysis.
+            Passionate about building user-focused, responsive web applications with clean code.
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center md:justify-start">

@@ -6,13 +6,13 @@ const services = [
     icon: Paintbrush,
     title: "Web Design",
     description:
-      "Creating visually appealing, intuitive interfaces with a focus on usability, aesthetics, and user experience.",
+      "Creating visually appealing, intuitive interfaces with a focus on usability, aesthetics and user experience.",
   },
   {
     icon: Code,
     title: "Frontend Development",
     description:
-      "Building interactive UIs with clean, structured, and readable code using HTML, CSS, and JavaScript.",
+      "Building interactive UIs with clean, structured and readable code using HTML, CSS and JavaScript.",
   },
   {
     icon: Smartphone,
