@@ -76,7 +76,9 @@ const ProjectsSection = () => {
                   <ExternalLink size={14} /> Live Demo
                 </a>
                 <a
-                  href="#"
+                  href={project.github || "#"}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   <Github size={14} /> GitHub
