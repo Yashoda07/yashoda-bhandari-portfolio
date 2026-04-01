@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Download } from "lucide-react";
-import profileImg from "@/assets/profile.jpg";
+const profileImg = "https://i.postimg.cc/HkCykRMK/IMG-20260401-162653.jpg";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
