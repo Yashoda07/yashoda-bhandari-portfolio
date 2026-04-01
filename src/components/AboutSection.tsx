@@ -50,7 +50,7 @@ const AboutSection = () => {
           >
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
               Building the web with{" "}
-              <span className="gradient-text">passion & precision</span>
+              <span className="text-primary">passion & precision</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
               I'm a frontend developer specializing in HTML, CSS and JavaScript,
