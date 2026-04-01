@@ -65,7 +65,9 @@ const ContactSection = () => {
                 LinkedIn Profile
               </a>
               <a
-                href="#"
+                href="https://github.com/Yashoda07"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-3 text-foreground hover:text-primary transition-colors"
               >
                 <Github size={18} className="text-primary" />
