@@ -63,6 +63,11 @@ const AboutSection = () => {
               I'm passionate about bridging design and functionality to build
               meaningful digital experiences.
             </p>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Apart from my technical work, I genuinely enjoy art and creativity.
+              It naturally reflects in the way I design, helping me make my
+              projects more visually appealing and expressive.
+            </p>
 
             <div className="flex gap-6 mt-6">
               <div className="flex items-center gap-2 text-sm text-foreground">
