@@ -8,6 +8,7 @@ const projects = [
       "A structured web project focusing on responsive design and usability. Emphasizes layout clarity, UI polish, and frontend logic for a seamless shopping experience.",
     tags: ["HTML", "CSS", "JavaScript"],
     liveDemo: "https://yashoda07.github.io/frontend-projects/KaarigariKart/html-files/",
+    github: "https://github.com/Yashoda07/frontend-projects/tree/main/KaarigariKart",
   },
   {
     title: "YouTube UI Clone",
@@ -75,7 +76,9 @@ const ProjectsSection = () => {
                   <ExternalLink size={14} /> Live Demo
                 </a>
                 <a
-                  href="#"
+                  href={project.github || "#"}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   <Github size={14} /> GitHub
