@@ -15,6 +15,7 @@ const projects = [
     description:
       "A pixel-perfect recreation of YouTube's interface, demonstrating deep understanding of layout structuring, responsiveness, and real-world design patterns.",
     tags: ["HTML", "CSS", "Responsive"],
+    liveDemo: "https://yashoda07.github.io/frontend-projects/youtube-clone/",
     github: "https://github.com/Yashoda07/frontend-projects/tree/main/youtube-clone",
   },
 ];
