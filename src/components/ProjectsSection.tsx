@@ -67,7 +67,9 @@ const ProjectsSection = () => {
 
               <div className="flex gap-4">
                 <a
-                  href="#"
+                  href={project.liveDemo || "#"}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 text-sm text-primary hover:underline"
                 >
                   <ExternalLink size={14} /> Live Demo
