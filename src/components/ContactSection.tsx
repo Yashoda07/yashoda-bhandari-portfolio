@@ -56,7 +56,9 @@ const ContactSection = () => {
                 +91 XXXXXXXXXX
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/yashoda-bhandari-0b2783378/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-3 text-foreground hover:text-primary transition-colors"
               >
                 <Linkedin size={18} className="text-primary" />
