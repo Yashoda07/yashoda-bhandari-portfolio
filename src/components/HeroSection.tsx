@@ -21,7 +21,7 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/50 to-background" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 py-32 flex flex-col-reverse md:flex-row items-center gap-12 md:gap-20">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 py-32 flex flex-col md:flex-row items-center gap-12 md:gap-20">
         {/* Text */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
