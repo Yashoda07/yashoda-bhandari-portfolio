@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Download } from "lucide-react";
-import profileImg from "@/assets/profile.jpg";
+const profileImg = "https://i.postimg.cc/HkCykRMK/IMG-20260401-162653.jpg";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
@@ -73,17 +73,17 @@ const HeroSection = () => {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="relative flex-shrink-0"
         >
-          <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden gradient-border glow">
+          <div className="w-56 h-72 md:w-64 md:h-80 rounded-3xl overflow-hidden gradient-border glow">
             <img
               src={profileImg}
               alt="Yashoda Bhandari"
               className="w-full h-full object-cover"
               width={512}
-              height={512}
+              height={680}
             />
           </div>
           {/* Decorative ring */}
-          <div className="absolute -inset-4 rounded-full border border-primary/20 animate-pulse" />
+          <div className="absolute -inset-4 rounded-3xl border border-primary/20 animate-pulse" />
         </motion.div>
       </div>
     </section>
