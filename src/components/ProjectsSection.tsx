@@ -7,7 +7,7 @@ const projects = [
     description:
       "A structured web project focusing on responsive design and usability. Emphasizes layout clarity, UI polish, and frontend logic for a seamless shopping experience.",
     tags: ["HTML", "CSS", "JavaScript"],
-    liveDemo: "https://github.com/Yashoda07/frontend-projects/tree/main/KaarigariKart",
+    liveDemo: "https://yashoda07.github.io/frontend-projects/KaarigariKart/html-files/",
   },
   {
     title: "YouTube UI Clone",
