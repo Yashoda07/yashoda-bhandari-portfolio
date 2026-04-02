@@ -5,7 +5,7 @@ const goals = [
   { icon: Briefcase, text: "Actively seeking internship opportunities" },
   { icon: TrendingUp, text: "Strong foundational knowledge in web technologies" },
   { icon: Lightbulb, text: "Eager for real-world project exposure" },
-  { icon: Target, text: "Goal: build meaningful, scalable web solutions" },
+  { icon: Target, text: "Open to freelance work in building meaningful and scalable websites" },
 ];
 
 const ExperienceSection = () => {
