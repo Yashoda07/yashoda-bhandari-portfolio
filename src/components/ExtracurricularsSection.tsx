@@ -90,7 +90,7 @@ const ExtracurricularsSection = () => {
                 </div>
                 <div>
                   <p className="font-medium text-foreground">
-                    Volunteer — Aadharvad Charitable Trust, Kalyan (W)
+                    Volunteer - Aadharvad Charitable Trust, Kalyan (W)
                   </p>
                   <p className="text-sm text-muted-foreground">
                     January 2025 – July 2025
