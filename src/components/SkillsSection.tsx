@@ -51,49 +51,34 @@ const SkillsSection = () => {
         </h2>
 
         <div className="grid md:grid-cols-2 gap-12">
-          {/* Technical */}
-          <div>
-            <h3 className="font-display font-semibold text-lg mb-6">Technical Skills</h3>
-            <div className="space-y-5">
-              {technicalSkills.map((skill, i) => (
-                <motion.div
-                  key={skill.name}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.08 }}
-                >
-                  <div className="flex justify-between text-sm mb-1.5">
-                    <span>{skill.name}</span>
-                    <span className="text-muted-foreground">{skill.level}%</span>
-                  </div>
-                  <div className="h-2 rounded-full bg-secondary overflow-hidden">
-                    <motion.div
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${skill.level}%` }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.8, delay: i * 0.08 }}
-                      className="h-full rounded-full"
-                      style={{ background: "var(--gradient-primary)" }}
-                    />
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-
-          {/* Concepts + Core + Soft */}
+          {/* Technical + Core Areas */}
           <div className="space-y-10">
             <div>
-              <h3 className="font-display font-semibold text-lg mb-6">Concepts Known</h3>
-              <div className="flex flex-wrap gap-3">
-                {conceptsKnown.map((concept) => (
-                  <span
-                    key={concept}
-                    className="px-4 py-2 rounded-full text-sm font-medium border border-primary/40 text-primary"
+              <h3 className="font-display font-semibold text-lg mb-6">Technical Skills</h3>
+              <div className="space-y-5">
+                {technicalSkills.map((skill, i) => (
+                  <motion.div
+                    key={skill.name}
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.08 }}
                   >
-                    {concept}
-                  </span>
+                    <div className="flex justify-between text-sm mb-1.5">
+                      <span>{skill.name}</span>
+                      <span className="text-muted-foreground">{skill.level}%</span>
+                    </div>
+                    <div className="h-2 rounded-full bg-secondary overflow-hidden">
+                      <motion.div
+                        initial={{ width: 0 }}
+                        whileInView={{ width: `${skill.level}%` }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8, delay: i * 0.08 }}
+                        className="h-full rounded-full"
+                        style={{ background: "var(--gradient-primary)" }}
+                      />
+                    </div>
+                  </motion.div>
                 ))}
               </div>
             </div>
@@ -111,25 +96,43 @@ const SkillsSection = () => {
                 ))}
               </div>
             </div>
+          </div>
 
+          {/* Concepts Known + Soft Skills */}
+          <div className="space-y-10">
             <div>
-              <h3 className="font-display font-semibold text-lg mb-6">Soft Skills</h3>
+              <h3 className="font-display font-semibold text-lg mb-6">Concepts Known</h3>
               <div className="grid grid-cols-2 gap-3">
-                {softSkills.map((skill, i) => (
+                {conceptsKnown.map((concept, i) => (
                   <motion.div
-                    key={skill}
+                    key={concept}
                     initial={{ opacity: 0, y: 15 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.08 }}
                     className="glass glass-hover rounded-xl p-4 text-sm text-center"
                   >
-                    {skill}
+                    {concept}
                   </motion.div>
                 ))}
               </div>
             </div>
+
+            <div>
+              <h3 className="font-display font-semibold text-lg mb-6">Soft Skills</h3>
+              <div className="flex flex-wrap gap-3">
+                {softSkills.map((skill) => (
+                  <span
+                    key={skill}
+                    className="px-4 py-2 rounded-full text-sm font-medium border border-primary/40 text-primary"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
+        </div>
         </div>
       </div>
     </section>
