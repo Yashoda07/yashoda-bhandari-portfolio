@@ -36,8 +36,8 @@ const ContactSection = () => {
             className="space-y-6"
           >
             <p className="text-muted-foreground leading-relaxed">
-              I'm always open to new opportunities, collaborations, or just a
-              friendly hello. Feel free to reach out!
+              I'm always open to new opportunities, collaborations, freelancing
+              or just a friendly hello. Feel free to reach out!
             </p>
 
             <div className="space-y-4">
