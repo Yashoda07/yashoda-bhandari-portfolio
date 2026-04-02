@@ -30,7 +30,7 @@ const fadeUp = {
 
 const AboutSection = () => {
   return (
-    <section id="about" className="section-padding">
+    <section id="about" className="section-padding section-light">
       <div className="max-w-7xl mx-auto">
         <motion.span
           initial={{ opacity: 0 }}

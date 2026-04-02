@@ -22,7 +22,7 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="section-padding">
+    <section id="projects" className="section-padding section-light">
       <div className="max-w-7xl mx-auto">
         <motion.span
           initial={{ opacity: 0 }}
