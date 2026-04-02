@@ -27,9 +27,11 @@ const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7 }}
-          className="relative flex-shrink-0"
+          className="relative flex-shrink-0 group"
         >
-          <div className="w-56 h-72 md:w-64 md:h-80 rounded-3xl overflow-hidden shadow-lg">
+          {/* Subtle themed glow behind image */}
+          <div className="absolute -inset-3 rounded-3xl bg-gradient-to-br from-primary/30 via-accent/20 to-primary/10 blur-2xl opacity-60 group-hover:opacity-80 transition-opacity duration-700" />
+          <div className="relative w-56 h-72 md:w-64 md:h-80 rounded-3xl overflow-hidden">
             <img
               src={profileImg}
               alt="Yashoda Bhandari"
@@ -37,6 +39,10 @@ const HeroSection = () => {
               width={512}
               height={680}
             />
+            {/* Edge fade to merge with background */}
+            <div className="absolute inset-0 rounded-3xl ring-[6px] ring-background/40" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-background/30 pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-r from-background/30 via-transparent to-background/30 pointer-events-none" />
           </div>
         </motion.div>
 
