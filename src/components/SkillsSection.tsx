@@ -82,8 +82,22 @@ const SkillsSection = () => {
             </div>
           </div>
 
-          {/* Soft + Core */}
+          {/* Concepts + Core + Soft */}
           <div className="space-y-10">
+            <div>
+              <h3 className="font-display font-semibold text-lg mb-6">Concepts Known</h3>
+              <div className="flex flex-wrap gap-3">
+                {conceptsKnown.map((concept) => (
+                  <span
+                    key={concept}
+                    className="px-4 py-2 rounded-full text-sm font-medium border border-primary/40 text-primary"
+                  >
+                    {concept}
+                  </span>
+                ))}
+              </div>
+            </div>
+
             <div>
               <h3 className="font-display font-semibold text-lg mb-6">Core Areas</h3>
               <div className="flex flex-wrap gap-3">
