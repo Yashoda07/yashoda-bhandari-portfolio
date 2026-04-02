@@ -7,17 +7,17 @@ const activities = [
     items: [
       {
         icon: Palette,
-        title: "Kala Coordinator — MVM",
+        title: "Kala Coordinator - MVM",
         period: "July 2025 – January 2026",
       },
       {
         icon: Users,
-        title: "Creatives Member — Malhar",
+        title: "Creatives Member - Malhar",
         period: "June 2024 – August 2024",
       },
       {
         icon: Award,
-        title: "Volantus — Participant & Winner",
+        title: "Volantus - Participant & Winner",
         period: "2022, 2023",
       },
     ],
