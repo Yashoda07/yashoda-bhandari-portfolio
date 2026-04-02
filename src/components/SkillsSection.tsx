@@ -11,6 +11,18 @@ const technicalSkills = [
   { name: "Microsoft Excel", level: 75 },
 ];
 
+const conceptsKnown = [
+  "Database",
+  "Data Structure and Algorithm",
+  "Fundamentals of OOPs Concepts",
+  "Discrete Mathematics and Statistics",
+  "Applied Mathematics",
+  "Fundamentals of Management",
+  "Organizational Behaviour",
+  "Economics for Managers",
+  "Elements of Service Sector Management",
+];
+
 const coreAreas = ["Web Development", "Software Development", "Data Analysis"];
 
 const softSkills = [
