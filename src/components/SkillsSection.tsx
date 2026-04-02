@@ -11,6 +11,18 @@ const technicalSkills = [
   { name: "Microsoft Excel", level: 75 },
 ];
 
+const conceptsKnown = [
+  "Database",
+  "Data Structure and Algorithm",
+  "Fundamentals of OOPs Concepts",
+  "Discrete Mathematics and Statistics",
+  "Applied Mathematics",
+  "Fundamentals of Management",
+  "Organizational Behaviour",
+  "Economics for Managers",
+  "Elements of Service Sector Management",
+];
+
 const coreAreas = ["Web Development", "Software Development", "Data Analysis"];
 
 const softSkills = [
@@ -70,8 +82,22 @@ const SkillsSection = () => {
             </div>
           </div>
 
-          {/* Soft + Core */}
+          {/* Concepts + Core + Soft */}
           <div className="space-y-10">
+            <div>
+              <h3 className="font-display font-semibold text-lg mb-6">Concepts Known</h3>
+              <div className="flex flex-wrap gap-3">
+                {conceptsKnown.map((concept) => (
+                  <span
+                    key={concept}
+                    className="px-4 py-2 rounded-full text-sm font-medium border border-primary/40 text-primary"
+                  >
+                    {concept}
+                  </span>
+                ))}
+              </div>
+            </div>
+
             <div>
               <h3 className="font-display font-semibold text-lg mb-6">Core Areas</h3>
               <div className="flex flex-wrap gap-3">
