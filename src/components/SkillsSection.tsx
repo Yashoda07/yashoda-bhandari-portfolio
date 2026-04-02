@@ -37,7 +37,7 @@ const softSkills = [
 
 const SkillsSection = () => {
   return (
-    <section id="skills" className="section-padding">
+    <section id="skills" className="section-padding section-dark">
       <div className="max-w-7xl mx-auto">
         <motion.span
           initial={{ opacity: 0 }}

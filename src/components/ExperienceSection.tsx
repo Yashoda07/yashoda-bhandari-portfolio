@@ -10,7 +10,7 @@ const goals = [
 
 const ExperienceSection = () => {
   return (
-    <section id="experience" className="section-padding">
+    <section id="experience" className="section-padding section-light">
       <div className="max-w-7xl mx-auto">
         <motion.span
           initial={{ opacity: 0 }}

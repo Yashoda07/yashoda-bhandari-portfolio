@@ -13,7 +13,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="section-padding">
+    <section id="contact" className="section-padding section-dark">
       <div className="max-w-7xl mx-auto">
         <motion.span
           initial={{ opacity: 0 }}
