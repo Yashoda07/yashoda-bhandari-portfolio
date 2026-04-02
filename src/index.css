@@ -105,6 +105,14 @@
     @apply py-20 md:py-28 px-4 md:px-8;
   }
 
+  .section-light {
+    background: linear-gradient(180deg, hsl(230, 25%, 10%) 0%, hsl(262, 20%, 11%) 50%, hsl(230, 25%, 10%) 100%);
+  }
+
+  .section-dark {
+    background: hsl(230, 25%, 7%);
+  }
+
   .glow {
     box-shadow: var(--shadow-glow);
   }
