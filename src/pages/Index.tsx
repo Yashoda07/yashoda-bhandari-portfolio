@@ -5,7 +5,7 @@ import SkillsSection from "@/components/SkillsSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import ServicesSection from "@/components/ServicesSection";
 import ExperienceSection from "@/components/ExperienceSection";
-import ContactSection from "@/components/ContactSection";
+import ExtracurricularsSection from "@/components/ExtracurricularsSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
