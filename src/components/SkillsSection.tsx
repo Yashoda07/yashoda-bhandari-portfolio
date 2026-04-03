@@ -56,31 +56,43 @@ const SkillsSection = () => {
           <div className="space-y-10">
             <div>
               <h3 className="font-display font-semibold text-lg mb-6">Technical Skills</h3>
-              <div className="space-y-5">
-                {technicalSkills.map((skill, i) => (
-                  <motion.div
-                    key={skill.name}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: i * 0.08 }}
-                  >
-                    <div className="flex justify-between text-sm mb-1.5">
-                      <span>{skill.name}</span>
-                      <span className="text-muted-foreground">{skill.level}%</span>
-                    </div>
-                    <div className="h-2 rounded-full bg-secondary overflow-hidden">
-                      <motion.div
-                        initial={{ width: 0 }}
-                        whileInView={{ width: `${skill.level}%` }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.8, delay: i * 0.08 }}
-                        className="h-full rounded-full"
-                        style={{ background: "var(--gradient-primary)" }}
-                      />
-                    </div>
-                  </motion.div>
-                ))}
+              <div className="grid grid-cols-4 gap-4">
+                {technicalSkills.map((skill, i) => {
+                  const radius = 30;
+                  const circumference = 2 * Math.PI * radius;
+                  const strokeDashoffset = circumference - (skill.level / 100) * circumference;
+                  return (
+                    <motion.div
+                      key={skill.name}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: i * 0.08 }}
+                      className="flex flex-col items-center gap-2"
+                    >
+                      <div className="relative w-[76px] h-[76px]">
+                        <svg width="76" height="76" viewBox="0 0 76 76" className="-rotate-90">
+                          <circle cx="38" cy="38" r={radius} fill="none" stroke="hsl(var(--secondary))" strokeWidth="5" />
+                          <motion.circle
+                            cx="38" cy="38" r={radius} fill="none"
+                            stroke="hsl(var(--primary))"
+                            strokeWidth="5"
+                            strokeLinecap="round"
+                            strokeDasharray={circumference}
+                            initial={{ strokeDashoffset: circumference }}
+                            whileInView={{ strokeDashoffset }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 1, delay: i * 0.08 }}
+                          />
+                        </svg>
+                        <span className="absolute inset-0 flex items-center justify-center text-xs font-semibold">
+                          {skill.level}%
+                        </span>
+                      </div>
+                      <span className="text-xs text-center text-muted-foreground leading-tight">{skill.name}</span>
+                    </motion.div>
+                  );
+                })}
               </div>
             </div>
 
