@@ -57,21 +57,21 @@ const ContactSection = () => {
 
             <div className="space-y-4">
               <a
-                href="mailto:yashoda.bhandari@email.com"
+                href="mailto:bhandariyashoda18@gmail.com"
                 className="flex items-center gap-3 text-foreground hover:text-primary transition-colors"
               >
                 <Mail size={18} className="text-primary" />
-                yashoda.bhandari@email.com
+                bhandariyashoda18@gmail.com
               </a>
               <a
-                href="tel:+91XXXXXXXXXX"
+                href="tel:+919819200000"
                 className="flex items-center gap-3 text-foreground hover:text-primary transition-colors"
               >
                 <Phone size={18} className="text-primary" />
-                +91 XXXXXXXXXX
+                +91 9819200000
               </a>
               <a
-                href="https://www.linkedin.com/in/yashoda-bhandari-0b2783378/"
+                href="https://www.linkedin.com/in/yashoda-bhandari-0b2783378"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-foreground hover:text-primary transition-colors"
