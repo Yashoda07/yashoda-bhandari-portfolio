@@ -38,7 +38,7 @@ const ContactSection = () => {
         >
           Contact
         </motion.span>
-        <h2 className="font-display text-3xl md:text-4xl font-bold mb-12">
+        <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
           Let's <span className="gradient-text">connect</span>
         </h2>
 
