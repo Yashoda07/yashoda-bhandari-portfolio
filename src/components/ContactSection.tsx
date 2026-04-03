@@ -1,15 +1,30 @@
 import { useState, type FormEvent } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, Linkedin, Github, Send } from "lucide-react";
+import { Mail, Phone, Linkedin, Github, Send, Loader2 } from "lucide-react";
+import emailjs from "@emailjs/browser";
+import { toast } from "sonner";
 
 const ContactSection = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [isSending, setIsSending] = useState(false);
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    // placeholder
-    alert("Thank you for your message! I'll get back to you soon.");
-    setForm({ name: "", email: "", message: "" });
+    setIsSending(true);
+    try {
+      await emailjs.send(
+        "service_heularg",
+        "template_9kuie7q",
+        { from_name: form.name, from_email: form.email, message: form.message },
+        "ODvyZp_mPYBplX6Ca"
+      );
+      toast.success("Message sent! I'll get back to you soon.");
+      setForm({ name: "", email: "", message: "" });
+    } catch {
+      toast.error("Failed to send message. Please try again.");
+    } finally {
+      setIsSending(false);
+    }
   };
 
   return (
