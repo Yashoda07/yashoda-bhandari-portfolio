@@ -93,9 +93,6 @@ const SkillsSection = () => {
                     </motion.div>
                   );
                 })}
-                    </div>
-                  </motion.div>
-                ))}
               </div>
             </div>
 
