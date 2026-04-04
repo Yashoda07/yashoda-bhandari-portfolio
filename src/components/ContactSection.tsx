@@ -30,18 +30,6 @@ const ContactSection = () => {
   return (
     <section id="contact" className="section-padding section-light">
       <div className="max-w-7xl mx-auto">
-        <motion.span
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="inline-block px-4 py-1.5 rounded-full text-xs font-medium tracking-widest uppercase border border-primary/40 text-primary mb-4"
-        >
-          Contact
-        </motion.span>
-        <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
-          Let's <span className="gradient-text">connect</span>
-        </h2>
-
         <div className="grid md:grid-cols-2 gap-12">
           {/* Info */}
           <motion.div
@@ -50,6 +38,19 @@ const ContactSection = () => {
             viewport={{ once: true }}
             className="space-y-6"
           >
+            <div>
+              <motion.span
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                className="inline-block px-4 py-1.5 rounded-full text-xs font-medium tracking-widest uppercase border border-primary/40 text-primary mb-4"
+              >
+                Contact
+              </motion.span>
+              <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
+                Let's <span className="gradient-text">connect</span>
+              </h2>
+            </div>
             <p className="text-muted-foreground leading-relaxed">
               I'm always open to new opportunities, collaborations, freelancing
               or just a friendly hello. Feel free to reach out!
