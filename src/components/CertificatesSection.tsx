@@ -67,15 +67,17 @@ const CertificatesSection = () => {
               <p className="text-sm text-muted-foreground leading-relaxed mb-4 flex-1">
                 {cert.description}
               </p>
-              <a
-                href={cert.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-sm text-primary hover:underline font-medium"
-              >
-                View certificate here
-                <ExternalLink size={14} />
-              </a>
+              {cert.url && (
+                <a
+                  href={cert.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-sm text-primary hover:underline font-medium"
+                >
+                  View certificate here
+                  <ExternalLink size={14} />
+                </a>
+              )}
             </motion.div>
           ))}
         </div>
