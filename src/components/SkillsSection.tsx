@@ -39,21 +39,22 @@ const SkillsSection = () => {
   return (
     <section id="skills" className="section-padding section-dark">
       <div className="max-w-7xl mx-auto">
-        <motion.span
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="inline-block px-4 py-1.5 rounded-full text-xs font-medium tracking-widest uppercase border border-primary/40 text-primary mb-4"
-        >
-          Skills
-        </motion.span>
-        <h2 className="font-display text-3xl md:text-4xl font-bold mb-12">
-          My <span className="gradient-text">tech stack</span> & abilities
-        </h2>
-
         <div className="grid md:grid-cols-2 gap-12">
           {/* Technical + Core Areas */}
           <div className="space-y-10">
+            <div>
+              <motion.span
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                className="inline-block px-4 py-1.5 rounded-full text-xs font-medium tracking-widest uppercase border border-primary/40 text-primary mb-4"
+              >
+                Skills
+              </motion.span>
+              <h2 className="font-display text-3xl md:text-4xl font-bold mb-8">
+                My <span className="gradient-text">tech stack</span> & abilities
+              </h2>
+            </div>
             <div>
               <h3 className="font-display font-semibold text-lg mb-6">Technical Skills</h3>
               <div className="grid grid-cols-4 gap-4">
