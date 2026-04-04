@@ -3,25 +3,25 @@ import { Award, ExternalLink, Calendar } from "lucide-react";
 
 const certificates = [
   {
-    title: "Certificate Title 1",
-    name: "Issuing Organization",
-    period: "Month Year",
-    description: "Brief description of the certificate and what it covers.",
-    url: "https://example.com/certificate1",
+    title: "SQL",
+    name: "HackerRank",
+    period: "April 2026",
+    description: "Efficiently extracting insights through precise SQL queries, structuring data models with relational joins, and driving decision-making with advanced aggregators.",
+    url: "https://www.hackerrank.com/certificates/31a766bf1249",
   },
   {
-    title: "Certificate Title 2",
-    name: "Issuing Organization",
-    period: "Month Year",
-    description: "Brief description of the certificate and what it covers.",
-    url: "https://example.com/certificate2",
+    title: "CSS",
+    name: "HackerRank",
+    period: "April 2026",
+    description: "It covers topics like exploring Cascading and Inheritance, exploring text styling fundamentals, understanding the use of layouts in CSS, understand the boxing of elements in CSS, among others.",
+    url: "https://www.hackerrank.com/certificates/853b24019eda",
   },
   {
-    title: "Certificate Title 3",
-    name: "Issuing Organization",
-    period: "Month Year",
-    description: "Brief description of the certificate and what it covers.",
-    url: "https://example.com/certificate3",
+    title: "Generative AI Fundamentals",
+    name: "Adobe",
+    period: "January 2026",
+    description: "Certified in Adobe Generative AI Fundamentals, focusing on leveraging AI-powered tools for rapid content generation, creative ideation and responsible, high-quality digital design.",
+    url: "",
   },
 ];
 
@@ -67,15 +67,17 @@ const CertificatesSection = () => {
               <p className="text-sm text-muted-foreground leading-relaxed mb-4 flex-1">
                 {cert.description}
               </p>
-              <a
-                href={cert.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-sm text-primary hover:underline font-medium"
-              >
-                View certificate here
-                <ExternalLink size={14} />
-              </a>
+              {cert.url && (
+                <a
+                  href={cert.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-sm text-primary hover:underline font-medium"
+                >
+                  View certificate here
+                  <ExternalLink size={14} />
+                </a>
+              )}
             </motion.div>
           ))}
         </div>
