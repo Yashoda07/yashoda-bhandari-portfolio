@@ -28,7 +28,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="section-padding section-light">
+    <section id="contact" className="section-padding section-dark">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12">
           {/* Info */}

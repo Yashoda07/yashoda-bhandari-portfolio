@@ -21,7 +21,7 @@ const certificates = [
     name: "Adobe",
     period: "January 2026",
     description: "Certified in Adobe Generative AI Fundamentals, focusing on leveraging AI-powered tools for rapid content generation, creative ideation and responsible, high-quality digital design.",
-    url: "",
+    url: "https://www.linkedin.com/in/yashoda-bhandari-0b2783378",
   },
 ];
 

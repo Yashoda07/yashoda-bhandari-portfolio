@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 const profileImg = "https://i.postimg.cc/kgnk8HJm/IMG-20260402-143937.jpg";
 import heroBg from "@/assets/hero-bg.jpg";
 
@@ -79,12 +79,6 @@ const HeroSection = () => {
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-border text-foreground font-medium hover:bg-secondary transition-colors"
             >
               Contact Me
-            </a>
-            <a
-              href="#"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-border text-muted-foreground font-medium hover:text-foreground hover:bg-secondary transition-colors"
-            >
-              <Download size={16} /> Resume
             </a>
           </div>
         </motion.div>
