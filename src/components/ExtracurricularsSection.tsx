@@ -26,7 +26,7 @@ const activities = [
 
 const ExtracurricularsSection = () => {
   return (
-    <section id="extracurriculars" className="section-padding section-dark">
+    <section id="extracurriculars" className="section-padding section-light">
       <div className="max-w-7xl mx-auto">
         <motion.span
           initial={{ opacity: 0 }}
